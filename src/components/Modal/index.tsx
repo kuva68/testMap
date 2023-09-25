@@ -76,6 +76,7 @@ const InfoModal = ({ sendData, close, isVisible }: IInfoModal) => {
             });
           }, 700);
         } else {
+          close();
           toast.show(response.errorMessage ?? "Error take Photo", {
             type: "danger",
             placement: "top",
