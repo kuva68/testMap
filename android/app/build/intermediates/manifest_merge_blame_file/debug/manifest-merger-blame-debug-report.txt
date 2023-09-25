@@ -1,0 +1,855 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.awesomtesteproject"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" /> <!-- Include this only if you are planning to use the microphone for video recording -->
+12-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:3:5-67
+12-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:7:1-66
+13-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:7:18-64
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->[com.facebook.flipper:flipper:0.182.0] /Users/vadim/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:5-76
+14-->[com.facebook.flipper:flipper:0.182.0] /Users/vadim/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:22-73
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->[:react-native-fs] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-81
+15-->[:react-native-fs] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 用途：访问网络状态（网络定位使用） 涉及模块：融合定位、室内室外定位、地理围栏、众包、SDM -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 用途：精确位置权限 涉及模块：融合定位、室内室外定位、地理围栏、众包、SDM -->
+17-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:13:5-79
+17-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:13:22-76
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:14:5-81
+18-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:14:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用途：改变WLAN状态的开关（网络定位使用） 涉及模块：融合定位、室内室外定位、地理围栏、众包 -->
+19-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:15:5-79
+19-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:15:22-76
+20    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+20-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:17:5-76
+20-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:17:22-73
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:5-68
+21-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:22-65
+22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+22-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:5-81
+22-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:22-78
+23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+23-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:5-77
+23-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:22-74
+24    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+24-->[com.google.android.gms:play-services-iid:17.0.0] /Users/vadim/.gradle/caches/transforms-3/d23697d3ddc319769c3d2a6565d52bbc/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
+24-->[com.google.android.gms:play-services-iid:17.0.0] /Users/vadim/.gradle/caches/transforms-3/d23697d3ddc319769c3d2a6565d52bbc/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
+25
+26    <uses-feature
+26-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+27        android:glEsVersion="0x00020000"
+27-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+28        android:required="true" />
+28-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+29
+30    <queries>
+30-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+31
+32        <!-- Needs to be explicitly declared on Android R+ -->
+33        <package android:name="com.google.android.apps.maps" />
+33-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+33-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+34
+35        <intent>
+35-->[com.huawei.hms:device:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/bab34363d7a6884cf15e34e8418452b9/transformed/jetified-device-6.5.0.300/AndroidManifest.xml:15:9-17:18
+36            <action android:name="com.huawei.hms.core.aidlservice" />
+36-->[com.huawei.hms:device:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/bab34363d7a6884cf15e34e8418452b9/transformed/jetified-device-6.5.0.300/AndroidManifest.xml:16:13-70
+36-->[com.huawei.hms:device:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/bab34363d7a6884cf15e34e8418452b9/transformed/jetified-device-6.5.0.300/AndroidManifest.xml:16:21-67
+37        </intent>
+38        <intent>
+38-->[com.huawei.hms:device:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/bab34363d7a6884cf15e34e8418452b9/transformed/jetified-device-6.5.0.300/AndroidManifest.xml:18:9-20:18
+39            <action android:name="com.huawei.hms.core" />
+39-->[com.huawei.hms:device:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/bab34363d7a6884cf15e34e8418452b9/transformed/jetified-device-6.5.0.300/AndroidManifest.xml:19:13-58
+39-->[com.huawei.hms:device:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/bab34363d7a6884cf15e34e8418452b9/transformed/jetified-device-6.5.0.300/AndroidManifest.xml:19:21-55
+40        </intent>
+41    </queries>
+42
+43    <uses-permission
+43-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:9:5-11:38
+44        android:name="android.permission.SCHEDULE_EXACT_ALARM"
+44-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:10:9-63
+45        android:maxSdkVersion="33" />
+45-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:11:9-35
+46    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+46-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:10:5-85
+46-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:10:22-82
+47    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+47-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:12:5-79
+47-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:12:22-76
+48    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+48-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:16:5-94
+48-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:16:22-91
+49    <uses-permission android:name="com.huawei.hms.permission.ACTIVITY_RECOGNITION" />
+49-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:17:5-86
+49-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:17:22-83
+50    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+50-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:22:5-77
+50-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:22:22-74
+51    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+51-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:23:5-84
+51-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:23:22-81
+52    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+52-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:24:5-86
+52-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:24:22-83
+53    <!--
+54    This permission overrids Android 12 restriction on starting foreground-serivces in background
+55    but the permission is available only to "priveliged" apps (EMERGENCY apps)
+56
+57    <uses-permission android:name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
+58    -->
+59    <!-- device-specific permissions for DeviceSettings methods -->
+60    <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE" />
+60-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:34:5-75
+60-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:34:22-72
+61    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT" />
+61-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:35:5-97
+61-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:35:22-94
+62
+63    <uses-feature
+63-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:37:5-39:36
+64        android:name="android.hardware.location.gps"
+64-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:38:9-53
+65        android:required="false" />
+65-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:39:9-33
+66
+67    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+67-->[com.android.installreferrer:installreferrer:1.1.2] /Users/vadim/.gradle/caches/transforms-3/7159fdde894990131f3ba6437117d8d3/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:5-110
+67-->[com.android.installreferrer:installreferrer:1.1.2] /Users/vadim/.gradle/caches/transforms-3/7159fdde894990131f3ba6437117d8d3/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:22-107
+68
+69    <application
+69-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:8:5-27:19
+70        android:name="com.awesomtesteproject.MainApplication"
+70-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:9:7-38
+71        android:allowBackup="false"
+71-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:13:7-34
+72        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+72-->[androidx.core:core:1.7.0] /Users/vadim/.gradle/caches/transforms-3/75e4635b66fa4e4e84e71b52579837ce/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+73        android:debuggable="true"
+74        android:fullBackupContent="@xml/backup_rules"
+74-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:41:18-63
+75        android:icon="@mipmap/ic_launcher"
+75-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:11:7-41
+76        android:label="@string/app_name"
+76-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:10:7-39
+77        android:roundIcon="@mipmap/ic_launcher_round"
+77-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:12:7-52
+78        android:theme="@style/AppTheme"
+78-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:14:7-38
+79        android:usesCleartextTraffic="true" >
+79-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/debug/AndroidManifest.xml:8:9-44
+80        <activity
+80-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/debug/AndroidManifest.xml:11:9-111
+81            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+81-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/debug/AndroidManifest.xml:11:19-83
+82            android:exported="false" />
+82-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/debug/AndroidManifest.xml:11:84-108
+83        <activity
+83-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:15:7-26:18
+84            android:name="com.awesomtesteproject.MainActivity"
+84-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:16:9-37
+85            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+85-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:18:9-118
+86            android:exported="true"
+86-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:21:9-32
+87            android:label="@string/app_name"
+87-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:17:9-41
+88            android:launchMode="singleTask"
+88-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:19:9-40
+89            android:windowSoftInputMode="adjustResize" >
+89-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:20:9-51
+90            <intent-filter>
+90-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:22:9-25:25
+91                <action android:name="android.intent.action.MAIN" />
+91-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:23:13-65
+91-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:23:21-62
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:24:13-73
+93-->/Users/vadim/Desktop/AwesomTesteProject/android/app/src/main/AndroidManifest.xml:24:23-70
+94            </intent-filter>
+95        </activity>
+96
+97        <provider
+97-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+98            android:name="com.imagepicker.ImagePickerProvider"
+98-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-63
+99            android:authorities="com.awesomtesteproject.imagepickerprovider"
+99-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-71
+100            android:exported="false"
+100-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+101            android:grantUriPermissions="true" >
+101-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+102            <meta-data
+102-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:70
+103                android:name="android.support.FILE_PROVIDER_PATHS"
+103-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-67
+104                android:resource="@xml/imagepicker_provider_paths" />
+104-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+105        </provider> <!-- A proxy-service that gives the library an opportunity to do some work before launching/resuming the actual application task. -->
+106        <service android:name="com.wix.reactnativenotifications.core.ProxyService" />
+106-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:10:9-86
+106-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:10:18-83
+107        <service
+107-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:11:9-18:19
+108            android:name="com.wix.reactnativenotifications.fcm.FcmInstanceIdListenerService"
+108-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:12:13-93
+109            android:exported="true" >
+109-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:13:13-36
+110            <intent-filter>
+110-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:14:13-17:29
+111                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+111-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:15:17-78
+111-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:15:25-75
+112                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+112-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:16:17-80
+112-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:16:25-77
+113            </intent-filter>
+114        </service>
+115        <service
+115-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:19:9-22:72
+116            android:name="com.wix.reactnativenotifications.fcm.FcmInstanceIdRefreshHandlerService"
+116-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:20:13-99
+117            android:exported="false"
+117-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:21:13-37
+118            android:permission="android.permission.BIND_JOB_SERVICE" />
+118-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:22:13-69
+119
+120        <provider
+120-->[:react-native-webview] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+121            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+121-->[:react-native-webview] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-83
+122            android:authorities="com.awesomtesteproject.fileprovider"
+122-->[:react-native-webview] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-64
+123            android:exported="false"
+123-->[:react-native-webview] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+124            android:grantUriPermissions="true" >
+124-->[:react-native-webview] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+125            <meta-data
+125-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:70
+126                android:name="android.support.FILE_PROVIDER_PATHS"
+126-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-67
+127                android:resource="@xml/file_provider_paths" />
+127-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+128        </provider> <!-- 声明Kit SDK的名称和版本号 -->
+129        <!-- Declare the SDK name and version -->
+130        <meta-data
+130-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:15:9-17:50
+131            android:name="com.huawei.hms.client.service.name:location"
+131-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:16:13-71
+132            android:value="location:6.9.0.300" /> <!-- 声明对Kit服务依赖的最低API Level -->
+132-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:17:13-47
+133        <!-- Declare minSdkVersion required for using the kit -->
+134        <meta-data
+134-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:20:9-22:33
+135            android:name="com.huawei.hms.min_api_level:location:location"
+135-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:21:13-74
+136            android:value="1" /> <!-- 关掉打点上报初始化 -->
+136-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:22:13-30
+137        <!-- Disable reporting of O&M logs -->
+138        <meta-data
+138-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:25:9-27:36
+139            android:name="com.huawei.hms.client.bi.setting"
+139-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:26:13-60
+140            android:value="true" />
+140-->[com.huawei.hms:location:6.9.0.300] /Users/vadim/.gradle/caches/transforms-3/5965b6731b9cba3d96e6f4e878bf544d/transformed/jetified-location-6.9.0.300/AndroidManifest.xml:27:13-33
+141        <meta-data
+141-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:20:9-22:33
+142            android:name="com.huawei.hms.min_api_level:com.huawei.hms:location:location"
+142-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:21:13-89
+143            android:value="1" />
+143-->[com.huawei.hms.LocationLiteSdk:core:2.9.0.300] /Users/vadim/.gradle/caches/transforms-3/238267abb28df800d9bc2826b6f67989/transformed/jetified-core-2.9.0.300/AndroidManifest.xml:22:13-30
+144
+145        <provider
+145-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:29:9-37:20
+146            android:name="androidx.startup.InitializationProvider"
+146-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:30:13-67
+147            android:authorities="com.awesomtesteproject.androidx-startup"
+147-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:31:13-68
+148            android:exported="false" >
+148-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:32:13-37
+149            <meta-data
+149-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:34:13-36:52
+150                android:name="androidx.work.WorkManagerInitializer"
+150-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:35:17-68
+151                android:value="androidx.startup" />
+151-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:36:17-49
+152            <meta-data
+152-->[androidx.emoji2:emoji2:1.0.0] /Users/vadim/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+153                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+153-->[androidx.emoji2:emoji2:1.0.0] /Users/vadim/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+154                android:value="androidx.startup" />
+154-->[androidx.emoji2:emoji2:1.0.0] /Users/vadim/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+155            <meta-data
+155-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/vadim/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+156                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+156-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/vadim/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+157                android:value="androidx.startup" />
+157-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/vadim/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+158        </provider>
+159
+160        <service
+160-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:39:9-45:35
+161            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+161-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:40:13-88
+162            android:directBootAware="false"
+162-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:41:13-44
+163            android:enabled="@bool/enable_system_alarm_service_default"
+163-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:42:13-72
+164            android:exported="false" />
+164-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:43:13-37
+165        <service
+165-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:46:9-52:35
+166            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+166-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:47:13-84
+167            android:directBootAware="false"
+167-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:48:13-44
+168            android:enabled="@bool/enable_system_job_service_default"
+168-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:49:13-70
+169            android:exported="true"
+169-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:50:13-36
+170            android:permission="android.permission.BIND_JOB_SERVICE" />
+170-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:51:13-69
+171        <service
+171-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:53:9-59:35
+172            android:name="androidx.work.impl.foreground.SystemForegroundService"
+172-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:54:13-81
+173            android:directBootAware="false"
+173-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:55:13-44
+174            android:enabled="@bool/enable_system_foreground_service_default"
+174-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:56:13-77
+175            android:exported="false" />
+175-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:57:13-37
+176
+177        <receiver
+177-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:61:9-66:35
+178            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+178-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:62:13-88
+179            android:directBootAware="false"
+179-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:63:13-44
+180            android:enabled="true"
+180-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:64:13-35
+181            android:exported="false" />
+181-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:65:13-37
+182        <receiver
+182-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:67:9-77:20
+183            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+183-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:68:13-106
+184            android:directBootAware="false"
+184-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:69:13-44
+185            android:enabled="false"
+185-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:70:13-36
+186            android:exported="false" >
+186-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:71:13-37
+187            <intent-filter>
+187-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:73:13-76:29
+188                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+188-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:17-87
+188-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:25-84
+189                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+189-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:17-90
+189-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:25-87
+190            </intent-filter>
+191        </receiver>
+192        <receiver
+192-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:78:9-88:20
+193            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+193-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:79:13-104
+194            android:directBootAware="false"
+194-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:80:13-44
+195            android:enabled="false"
+195-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:81:13-36
+196            android:exported="false" >
+196-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:82:13-37
+197            <intent-filter>
+197-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:84:13-87:29
+198                <action android:name="android.intent.action.BATTERY_OKAY" />
+198-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:17-77
+198-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:25-74
+199                <action android:name="android.intent.action.BATTERY_LOW" />
+199-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:17-76
+199-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:25-73
+200            </intent-filter>
+201        </receiver>
+202        <receiver
+202-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:89:9-99:20
+203            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+203-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:90:13-104
+204            android:directBootAware="false"
+204-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:91:13-44
+205            android:enabled="false"
+205-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:92:13-36
+206            android:exported="false" >
+206-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:93:13-37
+207            <intent-filter>
+207-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:95:13-98:29
+208                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+208-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:17-83
+208-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:25-80
+209                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+209-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:17-82
+209-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:25-79
+210            </intent-filter>
+211        </receiver>
+212        <receiver
+212-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:100:9-109:20
+213            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+213-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:101:13-103
+214            android:directBootAware="false"
+214-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:102:13-44
+215            android:enabled="false"
+215-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:103:13-36
+216            android:exported="false" >
+216-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:104:13-37
+217            <intent-filter>
+217-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:106:13-108:29
+218                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+218-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:17-79
+218-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:25-76
+219            </intent-filter>
+220        </receiver>
+221        <receiver
+221-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:110:9-121:20
+222            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+222-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:111:13-88
+223            android:directBootAware="false"
+223-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:112:13-44
+224            android:enabled="false"
+224-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:113:13-36
+225            android:exported="false" >
+225-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:114:13-37
+226            <intent-filter>
+226-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:116:13-120:29
+227                <action android:name="android.intent.action.BOOT_COMPLETED" />
+227-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:17-79
+227-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:25-76
+228                <action android:name="android.intent.action.TIME_SET" />
+228-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:17-73
+228-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:25-70
+229                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+229-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:17-81
+229-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:25-78
+230            </intent-filter>
+231        </receiver>
+232        <receiver
+232-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:122:9-131:20
+233            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+233-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:123:13-99
+234            android:directBootAware="false"
+234-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:124:13-44
+235            android:enabled="@bool/enable_system_alarm_service_default"
+235-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:125:13-72
+236            android:exported="false" >
+236-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:126:13-37
+237            <intent-filter>
+237-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:128:13-130:29
+238                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+238-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:17-98
+238-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:25-95
+239            </intent-filter>
+240        </receiver>
+241        <receiver
+241-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:132:9-142:20
+242            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+242-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:133:13-78
+243            android:directBootAware="false"
+243-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:134:13-44
+244            android:enabled="true"
+244-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:135:13-35
+245            android:exported="true"
+245-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:136:13-36
+246            android:permission="android.permission.DUMP" >
+246-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:137:13-57
+247            <intent-filter>
+247-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:139:13-141:29
+248                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+248-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:17-88
+248-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:25-85
+249            </intent-filter>
+250        </receiver>
+251
+252        <service
+252-->[androidx.room:room-runtime:2.5.0] /Users/vadim/.gradle/caches/transforms-3/e2c62b88dd4b755f4d08c8d07939e9da/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+253            android:name="androidx.room.MultiInstanceInvalidationService"
+253-->[androidx.room:room-runtime:2.5.0] /Users/vadim/.gradle/caches/transforms-3/e2c62b88dd4b755f4d08c8d07939e9da/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+254            android:directBootAware="true"
+254-->[androidx.room:room-runtime:2.5.0] /Users/vadim/.gradle/caches/transforms-3/e2c62b88dd4b755f4d08c8d07939e9da/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+255            android:exported="false" />
+255-->[androidx.room:room-runtime:2.5.0] /Users/vadim/.gradle/caches/transforms-3/e2c62b88dd4b755f4d08c8d07939e9da/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+256
+257        <meta-data
+257-->[com.facebook.soloader:soloader:0.10.5] /Users/vadim/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+258            android:name="com.facebook.soloader.enabled"
+258-->[com.facebook.soloader:soloader:0.10.5] /Users/vadim/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+259            android:value="false" />
+259-->[com.facebook.soloader:soloader:0.10.5] /Users/vadim/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+260
+261        <activity
+261-->[io.github.nishkarsh:android-permissions:2.1.6] /Users/vadim/.gradle/caches/transforms-3/4651b2871290e9b9caf1e443b1574753/transformed/jetified-android-permissions-2.1.6/AndroidManifest.xml:12:9-16:59
+262            android:name="com.intentfilter.androidpermissions.PermissionsActivity"
+262-->[io.github.nishkarsh:android-permissions:2.1.6] /Users/vadim/.gradle/caches/transforms-3/4651b2871290e9b9caf1e443b1574753/transformed/jetified-android-permissions-2.1.6/AndroidManifest.xml:13:13-83
+263            android:excludeFromRecents="true"
+263-->[io.github.nishkarsh:android-permissions:2.1.6] /Users/vadim/.gradle/caches/transforms-3/4651b2871290e9b9caf1e443b1574753/transformed/jetified-android-permissions-2.1.6/AndroidManifest.xml:14:13-46
+264            android:exported="false"
+264-->[io.github.nishkarsh:android-permissions:2.1.6] /Users/vadim/.gradle/caches/transforms-3/4651b2871290e9b9caf1e443b1574753/transformed/jetified-android-permissions-2.1.6/AndroidManifest.xml:15:13-37
+265            android:theme="@style/AppTheme.Transparent" /> <!-- Needs to be explicitly declared on P+ -->
+265-->[io.github.nishkarsh:android-permissions:2.1.6] /Users/vadim/.gradle/caches/transforms-3/4651b2871290e9b9caf1e443b1574753/transformed/jetified-android-permissions-2.1.6/AndroidManifest.xml:16:13-56
+266        <uses-library
+266-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+267            android:name="org.apache.http.legacy"
+267-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+268            android:required="false" />
+268-->[com.google.android.gms:play-services-maps:18.0.2] /Users/vadim/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+269
+270        <activity
+270-->[com.google.android.gms:play-services-base:18.1.0] /Users/vadim/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+271            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+271-->[com.google.android.gms:play-services-base:18.1.0] /Users/vadim/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+272            android:exported="false"
+272-->[com.google.android.gms:play-services-base:18.1.0] /Users/vadim/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+273            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+273-->[com.google.android.gms:play-services-base:18.1.0] /Users/vadim/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+274
+275        <receiver
+275-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:28:9-35:20
+276            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+276-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:29:13-78
+277            android:exported="true"
+277-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:30:13-36
+278            android:permission="com.google.android.c2dm.permission.SEND" >
+278-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:31:13-73
+279            <intent-filter>
+279-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:32:13-34:29
+280                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+280-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:33:17-81
+280-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:33:25-78
+281            </intent-filter>
+282        </receiver>
+283        <!--
+284             FirebaseMessagingService performs security checks at runtime,
+285             but set to not exported to explicitly avoid allowing another app to call it.
+286        -->
+287        <service
+287-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:41:9-48:19
+288            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+288-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:42:13-82
+289            android:directBootAware="true"
+289-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:43:13-43
+290            android:exported="false" >
+290-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:44:13-37
+291            <intent-filter android:priority="-500" >
+291-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:45:13-47:29
+291-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:45:28-51
+292                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+292-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:15:17-78
+292-->[:react-native-notifications] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-notifications/lib/android/app/build/intermediates/merged_manifest/reactNative60Debug/AndroidManifest.xml:15:25-75
+293            </intent-filter>
+294        </service>
+295        <service
+295-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:49:9-55:19
+296            android:name="com.google.firebase.components.ComponentDiscoveryService"
+296-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:50:13-84
+297            android:directBootAware="true"
+297-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+298            android:exported="false" >
+298-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:51:13-37
+299            <meta-data
+299-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:52:13-54:85
+300                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+300-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:53:17-119
+301                android:value="com.google.firebase.components.ComponentRegistrar" />
+301-->[com.google.firebase:firebase-messaging:21.1.0] /Users/vadim/.gradle/caches/transforms-3/c79493a5237e4ac851f05b99d295947e/transformed/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:54:17-82
+302            <meta-data
+302-->[com.google.firebase:firebase-iid:21.1.0] /Users/vadim/.gradle/caches/transforms-3/bc111320dd0695b3d5a996f9bbbbe5d1/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+303                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+303-->[com.google.firebase:firebase-iid:21.1.0] /Users/vadim/.gradle/caches/transforms-3/bc111320dd0695b3d5a996f9bbbbe5d1/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+304                android:value="com.google.firebase.components.ComponentRegistrar" />
+304-->[com.google.firebase:firebase-iid:21.1.0] /Users/vadim/.gradle/caches/transforms-3/bc111320dd0695b3d5a996f9bbbbe5d1/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+305            <meta-data
+305-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/vadim/.gradle/caches/transforms-3/911e12b592db83c902d6d30c96de403a/transformed/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
+306                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+306-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/vadim/.gradle/caches/transforms-3/911e12b592db83c902d6d30c96de403a/transformed/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
+307                android:value="com.google.firebase.components.ComponentRegistrar" />
+307-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/vadim/.gradle/caches/transforms-3/911e12b592db83c902d6d30c96de403a/transformed/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
+308            <meta-data
+308-->[com.google.firebase:firebase-installations:16.3.5] /Users/vadim/.gradle/caches/transforms-3/923b6d497a4b867392f5a99c2adf7024/transformed/jetified-firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+309                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+309-->[com.google.firebase:firebase-installations:16.3.5] /Users/vadim/.gradle/caches/transforms-3/923b6d497a4b867392f5a99c2adf7024/transformed/jetified-firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+310                android:value="com.google.firebase.components.ComponentRegistrar" />
+310-->[com.google.firebase:firebase-installations:16.3.5] /Users/vadim/.gradle/caches/transforms-3/923b6d497a4b867392f5a99c2adf7024/transformed/jetified-firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+311            <!--
+312                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+313                clients to use it as well, by defining this registrar in their own core/common library.
+314            -->
+315            <meta-data
+315-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+316                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+316-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+317                android:value="com.google.firebase.components.ComponentRegistrar" />
+317-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+318        </service>
+319
+320        <provider
+320-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+321            android:name="com.google.firebase.provider.FirebaseInitProvider"
+321-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+322            android:authorities="com.awesomtesteproject.firebaseinitprovider"
+322-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+323            android:directBootAware="true"
+323-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+324            android:exported="false"
+324-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+325            android:initOrder="100" />
+325-->[com.google.firebase:firebase-common:19.5.0] /Users/vadim/.gradle/caches/transforms-3/e6be34a917a14134e90e9ecd24a658c5/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+326
+327        <meta-data
+327-->[com.google.android.gms:play-services-basement:18.1.0] /Users/vadim/.gradle/caches/transforms-3/bf9b6fb405d2f7fd8250171739588e78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+328            android:name="com.google.android.gms.version"
+328-->[com.google.android.gms:play-services-basement:18.1.0] /Users/vadim/.gradle/caches/transforms-3/bf9b6fb405d2f7fd8250171739588e78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+329            android:value="@integer/google_play_services_version" />
+329-->[com.google.android.gms:play-services-basement:18.1.0] /Users/vadim/.gradle/caches/transforms-3/bf9b6fb405d2f7fd8250171739588e78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+330
+331        <service
+331-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/vadim/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+332            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+332-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/vadim/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+333            android:exported="false" >
+333-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/vadim/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+334            <meta-data
+334-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/vadim/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+335                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+335-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/vadim/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+336                android:value="cct" />
+336-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/vadim/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+337        </service>
+338        <service
+338-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/vadim/.gradle/caches/transforms-3/8442cbdc6ad5c66b05f3c030a9fb895d/transformed/jetified-transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
+339            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+339-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/vadim/.gradle/caches/transforms-3/8442cbdc6ad5c66b05f3c030a9fb895d/transformed/jetified-transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
+340            android:exported="false"
+340-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/vadim/.gradle/caches/transforms-3/8442cbdc6ad5c66b05f3c030a9fb895d/transformed/jetified-transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
+341            android:permission="android.permission.BIND_JOB_SERVICE" >
+341-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/vadim/.gradle/caches/transforms-3/8442cbdc6ad5c66b05f3c030a9fb895d/transformed/jetified-transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
+342        </service>
+343
+344        <receiver
+344-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/vadim/.gradle/caches/transforms-3/8442cbdc6ad5c66b05f3c030a9fb895d/transformed/jetified-transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
+345            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+345-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/vadim/.gradle/caches/transforms-3/8442cbdc6ad5c66b05f3c030a9fb895d/transformed/jetified-transport-runtime-2.2.5/AndroidManifest.xml:33:13-132
+346            android:exported="false" />
+346-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/vadim/.gradle/caches/transforms-3/8442cbdc6ad5c66b05f3c030a9fb895d/transformed/jetified-transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
+347        <receiver
+347-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:14:9-16:40
+348            android:name="com.transistorsoft.tsbackgroundfetch.FetchAlarmReceiver"
+348-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:15:13-83
+349            android:exported="false" />
+349-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:16:13-37
+350
+351        <service
+351-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:18:9-21:72
+352            android:name="com.transistorsoft.tsbackgroundfetch.FetchJobService"
+352-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:19:13-80
+353            android:exported="true"
+353-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:20:13-36
+354            android:permission="android.permission.BIND_JOB_SERVICE" />
+354-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:21:13-69
+355
+356        <receiver
+356-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:23:9-30:20
+357            android:name="com.transistorsoft.tsbackgroundfetch.BootReceiver"
+357-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:24:13-77
+358            android:exported="false" >
+358-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:25:13-37
+359            <intent-filter>
+359-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:26:13-29:29
+360                <action android:name="android.intent.action.BOOT_COMPLETED" />
+360-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:17-79
+360-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:25-76
+361                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+361-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:28:17-84
+361-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:28:25-81
+362            </intent-filter>
+363        </receiver> <!-- TODO For disabling SharedPreferences backup on Android 12+ android:dataExtractionRules="@xml/backup_rules" -->
+364        <activity
+364-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:45:9-50:64
+365            android:name="com.transistorsoft.locationmanager.activity.TSLocationManagerActivity"
+365-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:46:13-97
+366            android:excludeFromRecents="true"
+366-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:47:13-46
+367            android:exported="true"
+367-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:48:13-36
+368            android:launchMode="singleInstance"
+368-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:49:13-48
+369            android:theme="@style/TSLocationManagerActivity" />
+369-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:50:13-61
+370
+371        <service
+371-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:52:9-54:56
+372            android:name="com.transistorsoft.locationmanager.service.TrackingService"
+372-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:53:13-86
+373            android:foregroundServiceType="location" />
+373-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:54:13-53
+374        <service
+374-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:55:9-57:90
+375            android:name="com.transistorsoft.locationmanager.service.LocationRequestService"
+375-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:56:13-93
+376            android:foregroundServiceType="@integer/foregroundServiceTypeShortService" />
+376-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:57:13-87
+377        <service
+377-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:58:9-60:84
+378            android:name="com.transistorsoft.locationmanager.service.ActivityRecognitionService"
+378-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:59:13-97
+379            android:foregroundServiceType="@integer/foregroundServiceTypeHealth" />
+379-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:60:13-81
+380        <service
+380-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:61:9-63:90
+381            android:name="com.transistorsoft.locationmanager.service.GeofencingService"
+381-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:62:13-88
+382            android:foregroundServiceType="@integer/foregroundServiceTypeShortService" />
+382-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:63:13-87
+383        <!--
+384        DISABLED in favor of BackgroundTaskWorker
+385        <service android:name="com.transistorsoft.locationmanager.service.BackgroundTaskService" android:foregroundServiceType="@integer/foregroundServiceTypeShortService"/>
+386        -->
+387        <service
+387-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:68:9-70:90
+388            android:name="com.transistorsoft.locationmanager.scheduler.ScheduleService"
+388-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:69:13-88
+389            android:foregroundServiceType="@integer/foregroundServiceTypeShortService" />
+389-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:70:13-87
+390
+391        <receiver
+391-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:72:9-74:40
+392            android:name="com.transistorsoft.locationmanager.scheduler.ScheduleAlarmReceiver"
+392-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:73:13-94
+393            android:exported="false" />
+393-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:74:13-37
+394
+395        <service
+395-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:76:9-78:72
+396            android:name="com.transistorsoft.locationmanager.scheduler.ScheduleJobService"
+396-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:77:13-91
+397            android:permission="android.permission.BIND_JOB_SERVICE" />
+397-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:78:13-69
+398
+399        <receiver
+399-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:80:9-89:20
+400            android:name="com.transistorsoft.locationmanager.BootReceiver"
+400-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:81:13-75
+401            android:enabled="true"
+401-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:82:13-35
+402            android:exported="false"
+402-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:83:13-37
+403            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+403-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:84:13-75
+404            <intent-filter>
+404-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:26:13-29:29
+405                <action android:name="android.intent.action.BOOT_COMPLETED" />
+405-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:17-79
+405-->[androidx.work:work-runtime:2.8.1] /Users/vadim/.gradle/caches/transforms-3/9144499bdb189adc6c9afc69cabf6512/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:25-76
+406                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+406-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:28:17-84
+406-->[com.transistorsoft:tsbackgroundfetch:1.0.2] /Users/vadim/.gradle/caches/transforms-3/ead0b5492291b8ffcf8c0afd2f77836b/transformed/jetified-tsbackgroundfetch-1.0.2/AndroidManifest.xml:28:25-81
+407            </intent-filter>
+408        </receiver>
+409
+410        <provider
+410-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:91:9-99:20
+411            android:name="com.transistorsoft.locationmanager.util.LogFileProvider"
+411-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:92:13-83
+412            android:authorities="com.awesomtesteproject.tslocationmanager.fileprovider"
+412-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:93:13-82
+413            android:exported="false"
+413-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:94:13-37
+414            android:grantUriPermissions="true" >
+414-->[com.transistorsoft:tslocationmanager:3.4.5] /Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/AndroidManifest.xml:95:13-47
+415            <meta-data
+415-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:70
+416                android:name="android.support.FILE_PROVIDER_PATHS"
+416-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-67
+417                android:resource="@xml/tslocationmanager_file_provider_path" />
+417-->[:react-native-image-picker] /Users/vadim/Desktop/AwesomTesteProject/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+418        </provider> <!-- 为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据 -->
+419        <meta-data
+419-->[com.huawei.hms:base:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/4547ae8c229f97b35970147ae7cf77d2/transformed/jetified-base-6.5.0.300/AndroidManifest.xml:15:9-17:46
+420            android:name="com.huawei.hms.client.service.name:base"
+420-->[com.huawei.hms:base:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/4547ae8c229f97b35970147ae7cf77d2/transformed/jetified-base-6.5.0.300/AndroidManifest.xml:16:13-67
+421            android:value="base:6.5.0.300" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+421-->[com.huawei.hms:base:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/4547ae8c229f97b35970147ae7cf77d2/transformed/jetified-base-6.5.0.300/AndroidManifest.xml:17:13-43
+422        <meta-data
+422-->[com.huawei.hms:base:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/4547ae8c229f97b35970147ae7cf77d2/transformed/jetified-base-6.5.0.300/AndroidManifest.xml:20:9-22:33
+423            android:name="com.huawei.hms.min_api_level:base:hmscore"
+423-->[com.huawei.hms:base:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/4547ae8c229f97b35970147ae7cf77d2/transformed/jetified-base-6.5.0.300/AndroidManifest.xml:21:13-69
+424            android:value="1" /> <!-- 用于判断是否集成了本lib -->
+424-->[com.huawei.hms:base:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/4547ae8c229f97b35970147ae7cf77d2/transformed/jetified-base-6.5.0.300/AndroidManifest.xml:22:13-30
+425        <meta-data
+425-->[com.huawei.hms:availableupdate:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/d8235eb9bc793de9f8846873e1cfa67f/transformed/jetified-availableupdate-6.5.0.300/AndroidManifest.xml:17:9-19:35
+426            android:name="availableLoaded"
+426-->[com.huawei.hms:availableupdate:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/d8235eb9bc793de9f8846873e1cfa67f/transformed/jetified-availableupdate-6.5.0.300/AndroidManifest.xml:18:13-43
+427            android:value="yes" />
+427-->[com.huawei.hms:availableupdate:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/d8235eb9bc793de9f8846873e1cfa67f/transformed/jetified-availableupdate-6.5.0.300/AndroidManifest.xml:19:13-32
+428
+429        <activity
+429-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:10:9-21:20
+430            android:name="com.huawei.hms.activity.BridgeActivity"
+430-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:11:13-66
+431            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode"
+431-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:12:13-131
+432            android:excludeFromRecents="true"
+432-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:13:13-46
+433            android:exported="false"
+433-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:14:13-37
+434            android:hardwareAccelerated="true"
+434-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:15:13-47
+435            android:screenOrientation="behind"
+435-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:16:13-47
+436            android:theme="@style/Base_Translucent" >
+436-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:17:13-52
+437            <meta-data
+437-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:18:13-20:77
+438                android:name="hwc-theme"
+438-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:19:17-41
+439                android:value="androidhwext:style/Theme.Emui.Translucent" />
+439-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:20:17-74
+440        </activity>
+441        <activity
+441-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:22:9-26:20
+442            android:name="com.huawei.hms.activity.EnableServiceActivity"
+442-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:23:13-73
+443            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+443-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:24:13-106
+444            android:exported="false" >
+444-->[com.huawei.hms:ui:6.5.0.300] /Users/vadim/.gradle/caches/transforms-3/107c93afeb5b162dc4c62d52a09a381c/transformed/jetified-ui-6.5.0.300/AndroidManifest.xml:25:13-37
+445        </activity>
+446
+447        <provider
+447-->[com.huawei.agconnect:agconnect-core:1.6.5.300] /Users/vadim/.gradle/caches/transforms-3/5045ec1e88df687e870b824b6874282d/transformed/jetified-agconnect-core-1.6.5.300/AndroidManifest.xml:11:9-14:40
+448            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+448-->[com.huawei.agconnect:agconnect-core:1.6.5.300] /Users/vadim/.gradle/caches/transforms-3/5045ec1e88df687e870b824b6874282d/transformed/jetified-agconnect-core-1.6.5.300/AndroidManifest.xml:12:13-90
+449            android:authorities="com.awesomtesteproject.AGCInitializeProvider"
+449-->[com.huawei.agconnect:agconnect-core:1.6.5.300] /Users/vadim/.gradle/caches/transforms-3/5045ec1e88df687e870b824b6874282d/transformed/jetified-agconnect-core-1.6.5.300/AndroidManifest.xml:13:13-73
+450            android:exported="false" />
+450-->[com.huawei.agconnect:agconnect-core:1.6.5.300] /Users/vadim/.gradle/caches/transforms-3/5045ec1e88df687e870b824b6874282d/transformed/jetified-agconnect-core-1.6.5.300/AndroidManifest.xml:14:13-37
+451
+452        <service
+452-->[com.huawei.agconnect:agconnect-core:1.6.5.300] /Users/vadim/.gradle/caches/transforms-3/5045ec1e88df687e870b824b6874282d/transformed/jetified-agconnect-core-1.6.5.300/AndroidManifest.xml:16:9-18:40
+453            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+453-->[com.huawei.agconnect:agconnect-core:1.6.5.300] /Users/vadim/.gradle/caches/transforms-3/5045ec1e88df687e870b824b6874282d/transformed/jetified-agconnect-core-1.6.5.300/AndroidManifest.xml:17:13-70
+454            android:exported="false" />
+454-->[com.huawei.agconnect:agconnect-core:1.6.5.300] /Users/vadim/.gradle/caches/transforms-3/5045ec1e88df687e870b824b6874282d/transformed/jetified-agconnect-core-1.6.5.300/AndroidManifest.xml:18:13-37
+455    </application>
+456
+457</manifest>

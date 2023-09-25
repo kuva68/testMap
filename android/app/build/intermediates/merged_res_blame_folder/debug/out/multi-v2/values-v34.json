@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.awesomtesteproject.app-mergeDebugResources-42:/values-v34/values-v34.xml",
+            "map": [
+                {
+                    "source": "/Users/vadim/.gradle/caches/transforms-3/56df39182bc63e5ec730d5e30d9cf5fa/transformed/jetified-tslocationmanager-3.4.5/res/values-v34/values-v34.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,117",
+                        "endColumns": "61,68",
+                        "endOffsets": "112,181"
+                    }
+                }
+            ]
+        }
+    ]
+}
